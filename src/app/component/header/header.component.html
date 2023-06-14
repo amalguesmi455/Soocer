@@ -1,0 +1,68 @@
+<header class="site-navbar py-4" role="banner">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="site-logo">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="ml-auto">
+        <nav
+          class="site-navigation position-relative text-right"
+          role="navigation"
+        >
+          <ul
+            class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block"
+          >
+            <li><a routerLink="" class="nav-link">Home</a></li>
+            <li><a routerLink="SignUp" class="nav-link">Sign up</a></li>
+            <li><a routerLink="login" class="nav-link">Login</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                routerLink="add-match"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Add
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" routerLink="add-match">Add Match</a>
+                <a class="dropdown-item" routerLink="add-player">Add Player</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                routerLink="add-match"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Table
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" routerLink="tabmatch">Table match</a>
+                <a class="dropdown-item" routerLink="tableau">Table player</a>
+              </div>
+            </li>
+            <li><a routerLink="cards" class="nav-link">Cards</a></li>
+            <li><a routerLink="contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a
+          href="#"
+          class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-white"
+          ><span class="icon-menu h3 text-white"></span
+        ></a>
+      </div>
+    </div>
+  </div>
+</header>

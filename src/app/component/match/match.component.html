@@ -1,0 +1,34 @@
+<div class="d-flex team-vs" style="margin-top: 20px">
+  <button class="btn btn-danger" (click)="Delete(match.id)">Delete</button>
+  <span class="score">
+
+ <span [ngStyle]="{ color: compare(match.scoreOne, match.scoreTow)[0] }">{{match.scoreOne}}</span>
+    -<span [ngStyle]="{ color: compare(match.scoreTow, match.scoreOne)[0] }">
+      {{ match.scoreTow }}</span
+    ></span
+  >
+  <div class="team-1 w-50">
+    <div class="team-details w-100 text-center">
+      <img src="assets/images/logo_1.png" alt="Image" class="img-fluid" />
+      <h3>
+        <span [ngClass]="{classWin:compare(match.scoreOne, match.scoreTow)[1]=='Win',
+    classLoss:compare(match.scoreOne, match.scoreTow)[1]=='Loss',
+    classDrow:compare(match.scoreOne, match.scoreTow)[1]=='Draw'}"></span>
+        {{ match.teamOne }}
+        <span>({{ compare(match.scoreOne, match.scoreTow)[1] }})</span>
+      </h3>
+    </div>
+  </div>
+  <div class="team-2 w-50">
+    <div class="team-details w-100 text-center">
+      <img src="assets/images/logo_2.png" alt="Image" class="img-fluid" />
+      <h3>
+        <span [ngClass]="{classWin:compare(match.scoreOne, match.scoreTow)[1]=='Win',
+    classLoss:compare(match.scoreOne, match.scoreTow)[1]=='Loss',
+    class:compare(match.scoreOne, match.scoreTow)[1]=='Draw'}"></span>
+        {{ match.teamTow }}
+        <span>({{ compare(match.scoreTow, match.scoreOne)[1] }})</span>
+      </h3>
+    </div>
+  </div>
+</div>
