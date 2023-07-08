@@ -17,11 +17,8 @@ export class SignUpComponent {
     lastName:['',[Validators.minLength(3),Validators.required]],
     email:['',[Validators.minLength(3),Validators.required]],
     password:['',Validators.minLength(3)],
-    confirmPwd:['']
-  },
-  {
-     Validators:MustMatch('password',"confirmPwd")
-  }
+   },
+
   )
   }
 

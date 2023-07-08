@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class PlayerService {
-  PlayerUrl = 'http://localhost:3000/Players';
+  PlayerUrl = 'http://localhost:3000/Player';
   constructor(private bostagi: HttpClient) {}
   addPlayer(Player: any) {
     //console.log('here addPlayer servuce', Player);

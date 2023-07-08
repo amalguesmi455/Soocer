@@ -5,10 +5,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class MatchesService {
+
   matchesUrl = 'http://localhost:3000/matches';
   constructor(private bostagi: HttpClient) {}
   addMatch(match: any) {
-    //console.log('here addmatch servuce', match);
+    // console.log('here addmatch servuce', match);
 
     return this.bostagi.post<{ data: any }>(this.matchesUrl, match);
   }

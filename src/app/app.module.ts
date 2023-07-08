@@ -25,6 +25,9 @@ import { ColorDirective } from './directives/color.directive.spec';
 import { ReversePipe } from './directives/reverse.pipe';
 import { FilterPipe } from './directives/filtre.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { UserComponent } from './component/user/user.component';
+import { TeamComponent } from './component/team/team.component';
+import { TableteamComponent } from './component/tableteam/tableteam.component';
 
 
 @NgModule({
@@ -50,6 +53,10 @@ import { HttpClientModule } from '@angular/common/http';
     ColorDirective,
     ReversePipe,
     FilterPipe,
+    UserComponent,
+
+    TeamComponent,
+    TableteamComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +64,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     FormsModule,
     AppRoutingModule,
-  
+
     HttpClientModule
 
   ],
